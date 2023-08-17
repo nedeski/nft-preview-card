@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  max-width: 300px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 10px;
+}
+
+.image-section:hover .icon-view {
+  opacity: 1;
+}
+
+.image-section:hover .image-equilibrium {
+  opacity: 0.5;
+}
+
+.inner {
+  margin: 20px;
+}
+
+.image-section {
+  position: relative;
+}
+
+.image {
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 10px;
+}
+
+.image-equilibrium {
+  border-radius: 10px;
+  height: max-content;
+  display: block;
+}
+
+.icon-view {
+  position: absolute;
+  opacity: 0;
+  transition: 0.2s all;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h2 a {
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 12px;
+}
+
+h2:hover a {
+  color: hsl(178, 100%, 50%);
+}
+
+.price-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left span {
+  color: hsl(178, 100%, 50%);
+}
+
+hr {
+  border-color: hsl(215, 32%, 27%);
+}
+
+.autor {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.autor img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.autor p {
+  margin-bottom: 0;
+  line-height: 30px;
+}
+
+.autor a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.autor a:hover {
+  color: hsl(178, 100%, 50%);
+}
